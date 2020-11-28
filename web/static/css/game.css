@@ -1,0 +1,59 @@
+.game-ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.game-a {
+    font-size: 20pt;
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background: black; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+    color: aliceblue; /*меняем цвет ссылок*/
+    padding: 0px 30px; /*добавляем отступ*/
+    font-family: arial; /*меняем шрифт*/
+    line-height:50px; /*ровняем меню по вертикали*/
+    display: block;
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+    border: 2px solid aliceblue;
+}
+
+.game-label {
+    color: white;
+    font-size: 32pt;
+}
+
+.game-div-levels {
+    border: 2px solid white;
+    width: 300px;
+    height: 800px;
+    margin: 5px;
+    float: left;
+    background-color: black;
+}
+
+.game-div-main {
+    text-align: center;
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.game-li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.div-label {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.button-mic {
+    background-image: url("../mic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
