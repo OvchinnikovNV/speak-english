@@ -1,5 +1,6 @@
 # Результаты первой итерации
 Создано android приложение, в котором реализована одна role-play ситуация на покупку хлеба в магазине.
+
 Что готово:
 1.
 ![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/app.gif)
