@@ -12,7 +12,9 @@
 ![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/Story1.gif)
 
 Бот для игры в ассоциации на нейронной сети:
+
 ![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/Associat.gif)
 
 Реализация фронтенда веб-приложения в процесса. Вот прототип, который мы хотим получить
+
 ![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/startPage.png)
