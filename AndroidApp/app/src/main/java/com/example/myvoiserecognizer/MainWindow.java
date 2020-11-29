@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class ChooseGameActivity extends AppCompatActivity {
+public class MainWindow extends AppCompatActivity {
 
     Button buttonGame, buttonAssociation, buttonFilms;
     ImageView imageViewAssociation, imageViewTraining, imageViewMain, imageViewHistory;
@@ -23,7 +23,7 @@ public class ChooseGameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_game);
+        setContentView(R.layout.activity_main_window);
         getSupportActionBar().hide();
         imageViewAssociation = findViewById(R.id.imageViewAssociation);
         imageViewTraining = findViewById(R.id.imageViewTraining);
@@ -33,7 +33,23 @@ public class ChooseGameActivity extends AppCompatActivity {
         imageViewHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChooseGameActivity.this, VoiceRecognizer.class);
+                Intent intent = new Intent(MainWindow.this, ChooseActivitySituation.class);
+                startActivity(intent);
+            }
+        });
+
+        imageViewAssociation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainWindow.this,AssociationsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imageViewTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainWindow.this, TrainingActivity.class);
                 startActivity(intent);
             }
         });
@@ -57,4 +73,8 @@ public class ChooseGameActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
 }

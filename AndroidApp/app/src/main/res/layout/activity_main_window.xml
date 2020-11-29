@@ -4,24 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChooseGameActivity">
+    tools:context=".MainWindow">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="708dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_glavny_ekran" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="400dp"
-        android:layout_height="61dp"
+        android:layout_height="69dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_pryamougolnik"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/ic_pryamougolnik">
-
-        <ImageView
-            android:id="@+id/imageViewAssociation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_assotsiatsii" />
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/imageViewMain"
@@ -29,6 +34,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_glavnaya" />
+
+        <ImageView
+            android:id="@+id/imageViewAssociation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_assotsiatsii" />
 
         <ImageView
             android:id="@+id/imageViewHistory"

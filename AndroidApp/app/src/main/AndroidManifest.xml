@@ -12,19 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChooseGameActivity">
-
-        </activity>
-        <activity android:name=".EnterActivity">
+        <activity android:name=".SituationInHotel"></activity>
+        <activity android:name=".TrainingActivity" />
+        <activity android:name=".AssociationsActivity" />
+        <activity android:name=".ChooseActivitySituation" />
+        <activity android:name=".MainWindow" />
+        <activity android:name=".RegistrationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VoiceRecognizer">
-
-        </activity>
+        <activity android:name=".SituationInShop" />
     </application>
 
 </manifest>
