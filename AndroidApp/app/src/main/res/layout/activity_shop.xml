@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#ffffff"
+    tools:context=".SituationInShop">
+
+    <TextView
+        android:id="@+id/textViewWhatSayUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_dialog"
+        android:layout_marginTop="8dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="top"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWhatSayBot" />
+
+    <TextView
+        android:id="@+id/textViewWhatSayBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_dialog"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="top"
+        android:text="hello what do you need"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_pryamougolnik"
+        android:text="Click to start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTask"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTable"
+        android:layout_width="359dp"
+        android:layout_height="213dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_stol" />
+
+    <ImageView
+        android:id="@+id/imageViewKassa"
+        android:layout_width="166dp"
+        android:layout_height="175dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewTable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_kassa" />
+
+    <ImageView
+        android:id="@+id/imageViewBaba"
+        android:layout_width="344dp"
+        android:layout_height="177dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageViewTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baba" />
+
+    <ImageButton
+        android:id="@+id/buttonVoiceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:src="@drawable/ic_grommic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTable"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTable"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTable" />
+
+    <TextView
+        android:id="@+id/textViewListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tap to record"
+        android:text="Tap to record"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTable"
+        app:layout_constraintEnd_toEndOf="@+id/buttonVoiceInput"
+        app:layout_constraintStart_toStartOf="@+id/buttonVoiceInput"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVoiceInput" />
+
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_pryamougolnik"
+
+        android:text="Task: buy bread"
+        android:textColor="#000000"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
