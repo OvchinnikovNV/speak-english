@@ -1,20 +1,14 @@
-# Результаты первой итерации
-Создано android приложение, в котором реализована одна role-play ситуация на покупку хлеба в магазине.
+# Финал Цифровой прорыв 2020
+## Команда MOЯZE
 
-Что готово:
+![logo](https://github.com/OvchinnikovNV/chatbot-rostelekom/blob/main/rsc/gifs/logo.gif)
 
-![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/app.gif)
+## Установка и запуск
 
-Основа бота для задачи классификации на ассоциации слова.
+Для запуска Android приложения нужно Android Studio, затем скачать директорию **AndroidApp**
+Открыть проект в Android Studio и запустить **app/src/main/java/com/example/myvoiserecognizer/RegistrationActivity.java**
 
-Что планируем получить:
-
-![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/Story1.gif)
-
-Бот для игры в ассоциации на нейронной сети:
-
-![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/Associat.gif)
-
-Реализация фронтенда веб-приложения в процесса. Вот прототип, который мы хотим получить
-
-![](https://github.com/OvchinnikovNV/speak-english/blob/main/rsc/startPage.png)
+Для запуска серверной части игры в ассоциации с ботом нужно: 
+1) скачать директорию **backend**
+2) установить используемые библиотеки (Flask, PyTorch, NumPy, Pandas)
+3) запустить серверную часть **server.py**
